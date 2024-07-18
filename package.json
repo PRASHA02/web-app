@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node app.js"
   },
   "keywords": [],
   "author": "Prashanth D",
@@ -13,10 +15,14 @@
     "nodemon": "^3.0.2"
   },
   "dependencies": {
+    "cluster": "^0.7.7",
     "cors": "^2.8.5",
+    "docker": "^1.0.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "os": "^0.1.2",
+    "server": "^1.0.38",
     "socket.io": "^4.7.2"
   }
 }

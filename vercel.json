@@ -1,8 +1,11 @@
 {
-    "functions": {
-      "app.js": {
-        "runtime": "nodejs14.x"
-      }
-    }
-  }
-  
+    "version": 2,
+    "build":[{
+        "src": "./app.js",
+        "use": "@vercel/node"
+    }],
+    "routes":[{
+      "src": "/(.*)",
+      "dest": "/"
+    }]
+}
