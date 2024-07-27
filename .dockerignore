@@ -1,3 +1,4 @@
 Dockerfile
 nodemodules/
 .env
+Jenkinsfile
